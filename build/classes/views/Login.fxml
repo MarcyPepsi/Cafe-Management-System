@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LoginController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="loginBorder-bg" stylesheets="@style.css">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="loginBorder-bg" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="3.0" layoutY="6.0" prefHeight="540.0" prefWidth="593.0" styleClass="login-bg" stylesheets="@style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="117.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fondation-bernheim-management-cafe-logo-managementcafeu-small.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#e07f0b" layoutX="191.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" underline="true">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="userName" blendMode="MULTIPLY" layoutX="87.0" layoutY="211.0" prefHeight="26.0" prefWidth="205.0" promptText="User Name" styleClass="textField-bg" stylesheets="@style.css" />
+                        <PasswordField fx:id="password" layoutX="87.0" layoutY="271.0" prefHeight="25.0" prefWidth="203.0" promptText="Password" styleClass="textField-bg" stylesheets="@style.css" />
+                        <JFXButton buttonType="RAISED" layoutX="142.0" layoutY="395.0" onAction="#login" prefHeight="39.0" prefWidth="121.0" styleClass="loginButton-bg" stylesheets="@style.css" text="LOGIN" textFill="#dd4e0b">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="info" layoutX="11.0" layoutY="363.0" prefHeight="17.0" prefWidth="190.0">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="58.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+                        <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="55.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/BASIC_UI-09-512.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="58.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+                        <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="55.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/password-512.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a642ec7e-eaa4-446a-b06c-8c94201b30b7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cashier" class="java.lang.String"/>
+	<field name="itemName" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.String"/>
+	<field name="unitprice" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="231" y="0" width="107" height="66" uuid="69c9c4a7-f54c-4508-bfc1-5c88642475e9"/>
+				<imageExpression><![CDATA["C:\\Users\\Marcy GADEU\\Documents\\NetBeansProjects\\CafeManagementSystem\\src\\images\\fondation-bernheim-management-cafe-logo-managementcafeu-small.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="392" y="59" width="100" height="20" uuid="ee171a83-6257-40db-a4ac-860d3fcb4473"/>
+				<textFieldExpression><![CDATA[$P{cashier}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="138" height="20" uuid="af636fc4-0bb8-4ec8-b379-496eee3fb067"/>
+				<text><![CDATA[itemName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="138" height="20" uuid="ac347bf6-cbc9-40ab-9a4a-d26ce8a8c5c1"/>
+				<text><![CDATA[quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="138" height="20" uuid="bd4380d3-9a9b-43dc-bf73-32ffdcb9073d"/>
+				<text><![CDATA[unitprice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="138" height="20" uuid="8933837c-e665-4994-8af3-b260f093ac4e"/>
+				<text><![CDATA[total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="13" width="552" height="1" uuid="e5127db6-7d3a-4230-b4cd-4a6d3acf0297"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="22" y="9" width="100" height="20" uuid="7e770526-cdae-4a91-a688-d2ed2950d919"/>
+				<textFieldExpression><![CDATA[$F{itemName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="138" height="20" uuid="14ce567a-2ccc-4dd1-a544-4d268d28ebdc"/>
+				<textFieldExpression><![CDATA[$F{itemName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="138" height="20" uuid="17636a4e-1113-43c9-93d2-2e8d57226d8d"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="138" height="20" uuid="692faf51-1260-4b1e-8fbe-60f22588f876"/>
+				<textFieldExpression><![CDATA[$F{unitprice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="138" height="20" uuid="f615b713-137a-441d-8743-1bf9dc4ca865"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="357" y="0" width="100" height="1" uuid="204c56ac-adef-47fd-b72a-e78bf5a82ffa"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

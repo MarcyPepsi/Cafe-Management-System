@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.WelcomeViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="178.0" spacing="18.0" styleClass="vbox-bg" stylesheets="@style.css" AnchorPane.leftAnchor="5.0">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <JFXButton fx:id="placeOrderBut" buttonType="RAISED" layoutX="10.0" onAction="#placeOrder" onMouseClicked="#changeColor" prefHeight="51.0" prefWidth="161.0" styleClass="test-bg" stylesheets="@style.css" text="Place Order ">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/et-placing-orders-e1f3633ec912f8f9e2f132ea88ef97fe.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click Here to place an order" />
+                     </tooltip>
+                  </JFXButton>
+                  <Separator prefWidth="200.0" />
+                  <JFXButton fx:id="addItemsButton" buttonType="RAISED" layoutX="10.0" layoutY="13.0" onAction="#addItems" onMouseClicked="#changeColor" prefHeight="51.0" prefWidth="161.0" styleClass="test-bg" stylesheets="@style.css" text="Add Items">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/1053562-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click here to add an item." />
+                     </tooltip>
+                  </JFXButton>
+                  <Separator layoutX="10.0" layoutY="71.0" prefWidth="200.0" />
+                  <JFXButton fx:id="updateItemBut" buttonType="RAISED" layoutX="10.0" layoutY="74.0" onAction="#updateItems" onMouseClicked="#changeColor" prefHeight="61.0" prefWidth="168.0" styleClass="test-bg" stylesheets="@style.css" text="Update Items">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/update-report-2233651-1864541.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click here to update items" />
+                     </tooltip>
+                  </JFXButton>
+                  <Separator layoutX="10.0" layoutY="135.0" prefWidth="200.0" />
+                  <JFXButton fx:id="deleteItemBut" buttonType="RAISED" layoutX="10.0" layoutY="138.0" onAction="#deleteItems" onMouseClicked="#changeColor" prefHeight="51.0" prefWidth="161.0" styleClass="test-bg" stylesheets="@style.css" text="Delete Items">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/249220-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click here to delete items" />
+                     </tooltip>
+                  </JFXButton>
+                  <Separator layoutX="10.0" layoutY="263.0" prefWidth="200.0" />
+                  <JFXButton fx:id="salesBut" onAction="#seeSales" onMouseClicked="#changeColor" prefHeight="51.0" prefWidth="161.0" styleClass="test-bg" text="Sales">
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/images-1_1.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Separator prefWidth="200.0" />
+                  <JFXButton fx:id="logoutBut" buttonType="RAISED" layoutX="10.0" layoutY="202.0" onAction="#logout" onMouseClicked="#changeColor" prefHeight="51.0" prefWidth="161.0" styleClass="test-bg" stylesheets="@style.css" text="Logout">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/1024px-OOjs_UI_icon_logOut-ltr.svg.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click here to logout." />
+                     </tooltip>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <StackPane fx:id="containPane" layoutX="185.0" layoutY="-1.0" prefHeight="600.0" prefWidth="746.0">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="739.0">
+                     <children>
+                        <AnchorPane layoutX="29.0" layoutY="121.0" prefHeight="136.0" prefWidth="195.0" styleClass="dashboard-bg" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/images-1_1.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelNberOfPurchases" layoutX="98.0" layoutY="65.0" prefHeight="23.0" prefWidth="25.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutY="92.0" opacity="0.96" prefHeight="40.0" prefWidth="195.0" styleClass="dashboardName-bg" stylesheets="@style.css">
+                                 <children>
+                                    <Label layoutX="11.0" layoutY="1.0" prefHeight="33.0" prefWidth="184.0" text="Number Of Sales" textFill="#d78717">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="267.0" layoutY="121.0" prefHeight="136.0" prefWidth="195.0" styleClass="dashboard-bg" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/images-1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelNberOfDrinks" layoutX="89.0" layoutY="68.0" prefHeight="23.0" prefWidth="25.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutY="92.0" opacity="0.96" prefHeight="40.0" prefWidth="195.0" styleClass="dashboardName-bg" stylesheets="@style.css">
+                                 <children>
+                                    <Label layoutY="1.0" prefHeight="33.0" prefWidth="195.0" text="Number Of Types Of Drinks" textFill="#d78717">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="517.0" layoutY="121.0" prefHeight="136.0" prefWidth="195.0" styleClass="dashboard-bg" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/17-travel-512.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelNberOfFood" layoutX="98.0" layoutY="65.0" prefHeight="23.0" prefWidth="25.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutY="92.0" opacity="0.96" prefHeight="40.0" prefWidth="195.0" styleClass="dashboardName-bg" stylesheets="@style.css">
+                                 <children>
+                                    <Label layoutY="1.0" prefHeight="33.0" prefWidth="195.0" text="Number Of Type Of Foods" textFill="#d78717">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="29.0" layoutY="330.0" prefHeight="136.0" prefWidth="195.0" styleClass="dashboard-bg" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/hamburger.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelCanteen" layoutX="98.0" layoutY="65.0" prefHeight="23.0" prefWidth="25.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutY="92.0" opacity="0.96" prefHeight="40.0" prefWidth="195.0" styleClass="dashboardName-bg" stylesheets="@style.css">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutY="1.0" prefHeight="45.0" prefWidth="195.0" text="Canteen" textFill="#d78717">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="276.0" layoutY="330.0" prefHeight="136.0" prefWidth="195.0" styleClass="dashboard-bg" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/img_552972.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelBakery" layoutX="98.0" layoutY="65.0" prefHeight="23.0" prefWidth="25.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutY="92.0" opacity="0.96" prefHeight="40.0" prefWidth="195.0" styleClass="dashboardName-bg" stylesheets="@style.css">
+                                 <children>
+                                    <Label alignment="CENTER" layoutY="1.0" prefHeight="45.0" prefWidth="195.0" text="Bakery" textFill="#d78717">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="517.0" layoutY="330.0" prefHeight="136.0" prefWidth="195.0" styleClass="dashboard-bg" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="48.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/finance-1642789-1393874.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labelFinance" layoutX="98.0" layoutY="57.0" prefHeight="23.0" prefWidth="80.0" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutY="92.0" opacity="0.96" prefHeight="40.0" prefWidth="195.0" styleClass="dashboardName-bg" stylesheets="@style.css">
+                                 <children>
+                                    <Label alignment="CENTER" layoutY="1.0" prefHeight="45.0" prefWidth="195.0" text="Finance" textFill="#d78717">
+                                       <font>
+                                          <Font name="Book Antiqua Bold" size="36.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Label layoutX="2.0" layoutY="57.0" prefHeight="23.0" prefWidth="80.0" text="Francs CFA" textFill="WHITE">
+                                 <font>
+                                    <Font name="Book Antiqua Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="labelNberOfDrinks1" layoutX="170.0" layoutY="25.0" prefHeight="23.0" prefWidth="423.0" text="WELCOME TO MARCY CAFE MANAGEMENT SYSTEM" textFill="#d6b10b" underline="true">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

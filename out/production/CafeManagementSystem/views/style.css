@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 3, 2020, 8:28:15 AM
+    Author     : Marcy GADEU
+*/
+
+.loginBorder-bg
+{
+    -fx-background-color: orange;
+    -fx-background-radius: 15px;
+    
+    
+}
+.login-bg
+{
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+}
+.loginButton-bg
+{
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight:700;
+    -fx-background-radius: 15px;
+}
+.vbox-bg
+{
+    -fx-background-color: white;
+}
+.test-bg
+{
+    -fx-background-color: orange;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight:700;
+    -fx-background-radius: 15px;
+}
+.textField-bg
+{
+    -fx-background-radius: 8px;
+}
+.dashboard-bg
+{
+    -fx-background-color: brown;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight:700;
+    -fx-background-radius: 15px;
+}
+.dashboardName-bg
+{
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+}
+.addItems-bg
+{
+    -fx-background-color: brown;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight:700;
+    -fx-background-radius: 17px;
+}
+.addItemsButton-bg
+{
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight:700;
+    -fx-background-radius: 17px;
+}
+.table-row-cell-bg :odd
+{
+    -fx-background-color: orange;
+    -fx-padding: 0.0em;
+    
+}
+.table-row-cell-bg :even
+{
+    -fx-background-color: chocolate;
+    -fx-padding: 0.0em;
+    
+}

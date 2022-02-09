@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DeleteItemsController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="addItems-bg" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="134.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" styleClass="login-bg" stylesheets="@style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <TableView fx:id="tableOfItems" layoutX="50.0" layoutY="175.0" prefHeight="231.0" prefWidth="554.0" styleClass="table-row-cell-bg" stylesheets="@style.css">
+                          <columns>
+                            <TableColumn fx:id="ItemIDCol" prefWidth="75.0" text="Item ID" />
+                            <TableColumn fx:id="categoryCol" prefWidth="130.0" text="Category" />
+                              <TableColumn fx:id="itemNameCol" prefWidth="205.0" text="Item Name" />
+                              <TableColumn fx:id="priceCol" prefWidth="142.0" text="Price (Francs CFA)" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="searchBar" layoutX="400.0" layoutY="100.0" onAction="#searchAction" onKeyReleased="#keySearch" prefHeight="20.0" prefWidth="270.0" promptText="Type here to search the item by name" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="365.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+                        <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="365.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/common_search_lookup__-512.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton buttonType="RAISED" layoutX="90.0" layoutY="100.0" onAction="#deleteItems" styleClass="loginButton-bg" stylesheets="@style.css" text="Delete the item">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/61848-1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <Label alignment="CENTER" layoutX="190.0" layoutY="45.0" prefHeight="23.0" prefWidth="423.0" text="DELETE ITEM" textAlignment="CENTER" textFill="#d6b10b" underline="true">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
